@@ -1,4 +1,4 @@
-=== WordPress Any Word Search ===
+=== Any Word Search ===
 Contributors: felthy
 Donate link: http://www.themonkeys.com.au/
 Tags: search, word, operator, or
@@ -24,7 +24,7 @@ Easy.
 
 == Installation ==
 
-1. Extract the wordpress-any-word-search folder into the `/wp-content/plugins/` directory
+1. Extract the any-word-search folder into the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==

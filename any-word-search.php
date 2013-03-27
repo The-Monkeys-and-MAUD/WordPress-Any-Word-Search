@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WordPress Any Word Search
+Plugin Name: Any Word Search
 Plugin URI: https://github.com/TheMonkeys/WordPress-Any-Word-Search
 Description: A very simple WordPress plugin that makes the WordPress search box find posts that contain ANY of the words entered instead of only posts that contain ALL of the words; that is, it makes the search use the OR operator instead of the default AND operator.
 Version: 1.0
@@ -36,7 +36,7 @@ License: GPL2
  * @param $query instance of the current WP_Query object
  * @return string the modified search section of the database query as a string
  */
-function wordpress_any_word_search_posts_search_filter($search, &$query) {
+function any_word_search_posts_search_filter($search, &$query) {
     if ($query->is_search) {
         // example query:
         // AND (((wp_posts.post_title LIKE '%word1%') OR (wp_posts.post_content LIKE '%word1%')) AND ((wp_posts.post_title LIKE '%word2%') OR (wp_posts.post_content LIKE '%word2%')))  AND (wp_posts.post_password = '')
@@ -47,4 +47,4 @@ function wordpress_any_word_search_posts_search_filter($search, &$query) {
     }
     return $search;
 }
-add_filter('posts_search', 'wordpress_any_word_search_posts_search_filter', 10, 2);
+add_filter('posts_search', 'any_word_search_posts_search_filter', 10, 2);
